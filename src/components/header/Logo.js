@@ -4,7 +4,7 @@ export default class Logo extends React.Component{
 
     render(){
         return(
-            <p>Logo</p>
+          null
         );
     }
 }

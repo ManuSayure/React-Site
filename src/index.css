@@ -1,32 +1,66 @@
 *{ margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;font-size: 18px; font-family: Arial, Helvetica, sans-serif;}
 
 /*General*/
-a{text-decoration: none; font-weight: bold;}
+a{ 
+    text-decoration: none; 
+    font-weight: bold;
+}
 .nav{background: #000;}
-    .nav a{color: #fff;  padding: 10px 0;}
-    .nav a:hover{background: #666666;}
+    .nav a{ 
+            color: #fff; 
+             padding: 10px 0;
+            }
+    .nav a:hover{
+                background: #666666;
+            }
+.buttonMob img {
+                padding: 5px;
+                width: 30px;
+            }
 
 /*Small Smartphones*/
 @media screen and (max-width:480px) {
+    .header{
+        display: flex; 
+        flex-direction: column;
+    }
     .nav{
             display: none; 
             flex-direction: column;  
+            order: 2;
         }
      .nav a{  
                 width: 100%; 
                 text-align: center; 
             }
+    .buttonMob{
+        order: 1;
+        text-align: right;
+        padding: 5px 5% 5px 0;
+       
+    }
  }
 
 /*Medium Smartphones*/
 @media screen and (min-width:481px) and (max-width:768px){
+    .header{
+        display: flex; 
+        flex-direction: column;
+    }
     .nav{ 
             display: none; 
             flex-direction: column;
+            order: 2;
         }
         .nav a{
                 width: 100%; 
                 text-align: center; 
+            }
+    .buttonMob{
+                order: 1;
+                text-align: right;
+                padding: 5px 5% 5px 0;
+               
             }
 }
 
@@ -38,6 +72,7 @@ a{text-decoration: none; font-weight: bold;}
         .nav a{ 
                 width: 25%; 
             }
+    .buttonMob{display: none;}
     
 }
 
@@ -49,5 +84,5 @@ a{text-decoration: none; font-weight: bold;}
         .nav a{
                 width: 25%; 
             }
-            
+    .buttonMob{display: none;}        
 }
