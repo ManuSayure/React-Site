@@ -8,7 +8,7 @@ export default class Header extends React.Component{
     
     render(){
         return(
-            <div>
+            <div className='header'>
                 <Nav/>
                 <ButtonMode/>
                 <Logo/>

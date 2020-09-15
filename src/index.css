@@ -1,2 +1,53 @@
-*{ margin: 0; padding: 0;
+*{ margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;font-size: 18px; font-family: Arial, Helvetica, sans-serif;}
+
+/*General*/
+a{text-decoration: none; font-weight: bold;}
+.nav{background: #000;}
+    .nav a{color: #fff;  padding: 10px 0;}
+    .nav a:hover{background: #666666;}
+
+/*Small Smartphones*/
+@media screen and (max-width:480px) {
+    .nav{
+            display: none; 
+            flex-direction: column;  
+        }
+     .nav a{  
+                width: 100%; 
+                text-align: center; 
+            }
+ }
+
+/*Medium Smartphones*/
+@media screen and (min-width:481px) and (max-width:768px){
+    .nav{ 
+            display: none; 
+            flex-direction: column;
+        }
+        .nav a{
+                width: 100%; 
+                text-align: center; 
+            }
+}
+
+/*Larger Smatphones and small notebooks*/
+@media screen and (min-width:769px) and (max-width: 1199px){
+    .nav{ 
+            display: flex;
+        }
+        .nav a{ 
+                width: 25%; 
+            }
+    
+}
+
+/* XLargers screeens */
+@media screen and (min-width:1200px) {
+    .nav{ 
+            display: flex; 
+        }
+        .nav a{
+                width: 25%; 
+            }
+            
 }
