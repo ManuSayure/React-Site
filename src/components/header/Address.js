@@ -4,7 +4,11 @@ export default class Address extends React.Component{
 
     render(){
         return(
-            null
+           <div className='address'>
+               <img src='/img/whatsapp.png' alt='Contato Whatsapp'/> <strong>(xx) xxxxx - xxxx </strong><br/>
+               Endereço <br/>
+               <strong>R$ 700,00</strong>
+           </div>
         );
     }
 }
