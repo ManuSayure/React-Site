@@ -9,10 +9,10 @@ export default class Main extends React.Component{
     render(){
         return(
             <div className='main'>
-                <Slides/>
-                <Contact/>
+                <Slides/>               
                 <Information/>
-                <Map/>                
+                <Map/>   
+                <Contact/>             
             </div>
         );
     }
