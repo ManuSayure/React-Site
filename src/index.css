@@ -5,19 +5,56 @@ a{
     text-decoration: none; 
     font-weight: bold;
 }
-.nav{background: #000;}
+.nav{
+    background: #000;
+}
     .nav a{ 
-            color: #fff; 
-             padding: 10px 0;
-             text-align: center; 
-            }
+        color: #fff; 
+        padding: 10px 0;
+        text-align: center; 
+    }
     .nav a:hover{
-                background: #666666;
-            }
+        background: #666666;
+    }
 .buttonMob img {
-                padding: 5px;
-                width: 30px;
-            }
+    padding: 5px;
+    width: 30px;
+}
+.address strong{
+    font-size: 25px;
+    color: cadetblue;
+}
+.image-gallery{
+    float: left;
+}           
+.information{
+    float: left;
+}
+    .information li{
+        background: url("/img/next.png") no-repeat left center; 
+        list-style: none;
+        line-height: 35px;
+        padding-left: 30px;
+    }  
+.map{
+    float: left;
+    width: 100%;   
+}
+    .map iframe{
+        width: 100%;
+        border: none;
+    } 
+.footer{
+    display: flex;
+    width: 100%;
+    background: #000;
+    padding: 15px 5%;
+    font-weight: bold;
+    line-height: 35px;
+}
+    .footer div:nth-child(2){
+        color: #fff;      
+    }
 
 /*Small Smartphones*/
 @media screen and (max-width:480px) {
@@ -26,17 +63,16 @@ a{
         flex-direction: column;
         margin-bottom: 15px;
         background: #efefef;
-    }
-      
+    }      
     .nav{
-            display: none; 
-            flex-direction: column;  
-            order: 2;
+        order: 2;
+        display: none; 
+        flex-direction: column;              
+    }
+        .nav a{  
+            width: 100%; 
+            text-align: center; 
         }
-     .nav a{  
-                width: 100%; 
-                text-align: center; 
-            }
     .buttonMob{
         order: 1;
         text-align: right;
@@ -58,19 +94,32 @@ a{
     }   
         .address img{
             vertical-align: middle;
-        }
-        .address strong{
-            font-size: 20px;
-        }
+        }        
     .image-gallery{
-            float: left;
-            width: 90%;
-            margin: 0 5%;
+        width: 90%;
+        margin: 0 5%;
+    }
+    .information{   
+        width: 90%;
+        margin: 20px 0;           
+    }        
+    .map{           
+         margin: 35px 0;
+    }
+        .map iframe{               
+            height: 300px;                
+        } 
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+        .footer div:nth-child(1){           
+            text-align: center;
+    
         }
-
-
-
+            
  }
+    
 
 /*Medium Smartphones*/
 @media screen and (min-width:481px) and (max-width:768px){
@@ -80,44 +129,64 @@ a{
         margin-bottom: 15px;
         background: #efefef;
     }
-    .nav{ 
-            display: none; 
-            flex-direction: column;
-            order: 2;
-        }
+    .nav{   
+        order: 2;
+        display: none; 
+        flex-direction: column;
+           
+    }
         .nav a{
-                width: 100%; 
-                text-align: center; 
-            }
-            .buttonMob{
-                order: 1;
-                text-align: right;
-                padding: 7px 5% 7px 0;       
-            }
-            .logo{
-                position: absolute;
-                top: 7px;
-                left: 5%;
-            }   
-     .address{
-                order: 3;
-                padding: 10px 5% ;
-                line-height: 35px;
-                text-align: center;
-            }   
-                .address img{
-                    vertical-align: middle;
-                }
-                .address strong{
-                    font-size: 25px;
-                }
-     .image-gallery{
-                    float: left;
-                    width: 80%;
-                    margin: 0 10%;
-                }
+            width: 100%; 
+            text-align: center; 
+        }
+    .buttonMob{
+        order: 1;
+        text-align: right;
+        padding: 7px 5% 7px 0;       
+    }
+    .logo{
+        position: absolute;
+        top: 7px;
+        left: 5%;
+    }   
+    .address{              
+        padding: 10px 5% ;
+        line-height: 35px;
+        text-align: center;
+    }   
+        .address img{
+             vertical-align: middle;
+        }        
+    .image-gallery{
+         width: 80%;
+         margin: 0 10%;
+    }    
+    .information{  
+         width: 80%;
+         margin: 20px 10%;
+         padding-top: 20px;
+         padding-left: 40px;
+         align-items: center;
+            
+     }       
+    .map{
+        margin: 20px 0;
+    }
+        .map iframe{                        
+            height: 300px;                        
+        }  
+    .footer{
+        text-align: center;
+    }
+        .footer div:nth-child(1){
+                flex-grow: 1;           
         
+        }
+        .footer div:nth-child(2){           
+                flex-grow: 5;    
+            }  
 }
+
 
 /*Larger Smatphones and small notebooks*/
 @media screen and (min-width:769px) and (max-width: 1199px){
@@ -130,36 +199,46 @@ a{
     }
 
     .nav{ 
-            display: flex;
-        }
+        display: flex;
+    }
         .nav a{ 
-                width: 25%; 
-            }
+            width: 25%; 
+        }
     .buttonMob{display: none;}  
         .logo{
-                float: left;
-                width: 30%;
-                padding: 15px 0 15px 10%;
-        
-            }   
-    .address{
             float: left;
-            width: 70%;
-            padding: 20px 5% 10px 20%;
-            line-height: 35px;
-            text-align: center;
-            }   
-                .address img{
-                    vertical-align: middle;
-                }
-                .address strong{
-                    font-size: 25px;
-                }
-     .image-gallery{
-                    float: left;
-                    width: 42%;
-                    margin: 0 4%;
-                }
+            width: 30%;
+            padding: 15px 0 15px 10%;        
+        }   
+    .address{
+        float: left;
+        width: 70%;
+        padding: 20px 5% 10px 20%;
+        line-height: 35px;
+        text-align: center;
+    }   
+        .address img{
+            vertical-align: middle;
+        }        
+     .image-gallery{        
+        width: 52%;
+        margin: 0 4%;
+     }
+    .information{      
+        width: 40%;            
+     }
+    .map{                    
+        margin: 35px 0;
+    }
+        .map iframe{
+            height: 400px;                        
+             }
+    .footer div:nth-child(1){
+        flex-grow: 1;             
+    }
+    .footer div:nth-child(2){           
+         flex-grow: 5;    
+    } 
 }
 
 /* XLargers screeens */
@@ -172,17 +251,16 @@ a{
         background: #efefef;
     }
     .nav{ 
-            display: flex; 
-        }
+        display: flex; 
+    }
         .nav a{
-                width: 25%; 
-            }
+            width: 25%; 
+        }
     .buttonMob{display: none;}  
     .logo{
         float: left;
         width: 30%;
         padding: 15px 0 15px 10%;
-
     }   
     .address{
         float: left;
@@ -193,13 +271,63 @@ a{
     }   
         .address img{
             vertical-align: middle;
-        }
-        .address strong{
-            font-size: 25px;
-        }
+        }        
     .image-gallery{
         float: left;
-        width: 36%;
+        width: 40%;
         margin: 0 7%;
     }
+    .information{
+        vertical-align: middle;
+        margin-top: 30px;       
+        width: 40%;
+        color: darkcyan;
+    }    
+    .map{
+        margin: 35px 0;
+    }
+        .map iframe{           
+            height: 400px;           
+        }
+    .footer div:nth-child(1){
+            flex-grow: 1;           
+    }
+    .footer div:nth-child(2){           
+            flex-grow: 5;    
+        } 
+    .formulario{
+        display: flex;
+        width: 50%;
+        margin: 20px 25%;
+        flex-direction: column;
+
+    }
+        .formulario h1{
+            color: #000000;
+            text-align: center;
+            font-size: 30px;            
+        }
+        .formulario input{
+            margin: 6px 0;
+            height: 40px;  
+            color: #333333;          
+        }
+        .formulario input[type='text'],.formulario input[type='tel'], .formulario input[type='email']{
+            width: 100%;
+            padding: 0 5px;            
+        }
+        .formulario input[type='submit']{
+            background: #000000;
+            cursor: pointer;
+            color: #fff;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            width: 30%;
+        }
+        .formulario textarea{
+            width: 100%;
+            height: 150px;
+            color: #333333;
+        }
 }
