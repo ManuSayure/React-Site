@@ -30,7 +30,7 @@ export default class ButtonMod extends React.Component{
         return(
             <div className = "buttonMob" onClick = {this.handleClick}>
 
-                <img src="/img/menu.png" alt = 'Botão Mobile'/> 
+                <img src= {process.env.PUBLIC_URL + "/img/Menu.png"} alt = 'Botão Mobile'/> 
 
             </div>
         );

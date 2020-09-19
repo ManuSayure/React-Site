@@ -11,8 +11,9 @@ export default class Main extends React.Component{
             <div className='main'>
                 <Slides/>               
                 <Information/>
+                <Contact/>
                 <Map/>   
-                <Contact/>             
+                            
             </div>
         );
     }

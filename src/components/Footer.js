@@ -6,8 +6,7 @@ export default class Footer extends React.Component{
         return(
          <div className = 'footer'>
              <div>
-                 <img src='/img/footer.png' alt="Logomarca site"></img>
-
+                 <img src= {process.env.PUBLIC_URL + "/img/Footer.png"} alt="Logomarca site"></img>
              </div>
              <div>
                  Endereço: <br/>

@@ -5,14 +5,14 @@ export default class Contact extends React.Component{
 
     render(){
         return(
-          <div className ='formulario'>
+          <div className ='formulario' id="contact">
               <h1>Fale conosco</h1>
-              <form name="form1" id='form1' method='post' action= '/controllers/controllerForm.php'>
+              <form name="form1" id='form1' method='post' action= {process.env.PUBLIC_URL +'/controllers/controllerForm.php'}>
                   <input type ='text' name='nome'  id='nome' placeholder="Nome:"/>
                   <InputMask type= 'tel' name='tel' id ='tel' placeholder='Telefone:' mask="(99) 99999-9999" maskChar=" " />
                   <input type='email' name='email' id='email' placeholder='Email:'/>
                   <textarea name='mensagem' id='mensagem' placeholder="Mensagem"/>
-                  <input type='submit' value='enviar'/>
+                  <input type='submit' value='Enviar'/>
                   
               </form>
           </div>
